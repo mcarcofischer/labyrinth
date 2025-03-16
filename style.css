@@ -1,0 +1,69 @@
+body {
+  background-image : url("labyrinth.webp");
+  background-color: black;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family : verdana;
+}
+
+h1 {
+  color      : white;
+  text-align : center;
+}
+
+p {
+  color       : white;
+  font-size   : 20px;
+  text-align : center;
+}
+
+table {
+    margin: 0 auto;
+    border: none;
+
+}
+
+td {
+  height: 40px;
+  width: 40px;
+}
+
+.border {
+  background-image: url("wall.png");
+}
+
+.start {
+  background-color: darkgreen;
+}
+
+.track {
+  background-color : #32aa00;
+}
+
+.track:hover {
+  background-color : #32FF00;
+}
+
+.finish {
+  background-image: url("finish-flag.png");
+  background-size: 80px 80px;
+}
+
+#bigtext {
+  position : center;
+  font-family : verdana;
+  font-size   : 150px;
+}
+
+.blink {
+  animation-name: animation_blink;
+  animation-timing-function: ease-in;
+  animation-duration: 2s; 
+  animation-iteration-count: infinite;            
+}
+
+@keyframes animation_blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.1; }
+  100% { opacity: 1; }    
+}
